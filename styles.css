@@ -24,7 +24,7 @@ img {
     background: hsl(0, 0%, 100%);
     position: absolute;
     width: 32%;
-    margin: 12% 35%;
+    margin: 12% 33%;
     border-radius: 10px;
 }
 
@@ -149,9 +149,8 @@ details[open] summary::after {
 }
 
 @media screen and (max-width: 405px) {
-
     .first {
-        background-image: url(image/background-pattern-mobile.svg);
+        content: url(image/background-pattern-mobile.svg);
         width: 100%;
     }
 
@@ -161,7 +160,7 @@ details[open] summary::after {
 
     .second {
         width: 88%;
-        margin: 12% 8% 0% 6%;
+        margin: 30% 8% 0% 6%;
     }
 
     h2 {
