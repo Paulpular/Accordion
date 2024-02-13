@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: hsl(292, 42%, 14%);
+    font-weight: 700;
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+}
+
+.first {
+    position: absolute;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.second {
+    background: hsl(0, 0%, 100%);
+    position: absolute;
+    width: 32%;
+    margin: 12% 35%;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+    margin: 7% 0 7% 5%;
+    gap: 15px;
+    width: 7%;;
+}
+
+.third {
+    font-size: 9px;
+}
+
+details {
+    border-top: solid 1px rgb(238, 237, 237);
+    padding: 20px 0;
+    margin: 0 5%;
+}
+
+summary {
+    display: block;
+    position: relative;
+}
+
+h2:hover {
+    color: hsl(293, 60%, 48%);
+    cursor: pointer;
+}
+
+details:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 10px;
+    color: hsl(279, 20%, 77%);
+    padding: 5% 0;
+}
+
+summary::after {
+    content: url(image/icon-plus.svg);
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+details[open] summary::after {
+    content: url(image/icon-minus.svg);
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+@media screen and (max-width: 1107px) {
+    .first {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .second {
+        width: 40%;
+        margin: 12% 29%;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .first {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .second {
+        width: 50%;
+        margin: 12% 25%;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .first {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .second {
+        width: 75%;
+        margin: 12% 13%;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+
+    .first {
+        background-image: url(image/background-pattern-mobile.svg);
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .second {
+        width: 88%;
+        margin: 12% 8% 12% 6%;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    summary {
+        display: block;
+    }
+}
