@@ -52,6 +52,7 @@ details {
 summary {
     display: block;
     position: relative;
+    padding-right: 15%;
 }
 
 h2:hover {
@@ -187,17 +188,15 @@ details[open] summary::after {
         font-size: 13px;
     }
 
-    summary {
-        display: block;
-    }
-
     summary::after {
+        scale: 90%;
         top: -5px;
-        right: -15px;
+        right: -8px;
     }
 
     details[open] summary::after {
+        scale: 90%;
         top: -5px;
-        right: -15px
+        right: -8px
     }
 }
